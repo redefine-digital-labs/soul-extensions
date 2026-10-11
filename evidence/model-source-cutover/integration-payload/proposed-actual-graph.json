@@ -1,0 +1,805 @@
+{
+  "Model": {
+    "nodes": {
+      "SoulidityModel": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "manifest_sha256": "e0e2e991dc5e57d99e5368820b0b26b372fca5e39b8b0b7cbf61cb2289a4882b"
+      },
+      "SoulidityVisual": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "manifest_sha256": "7027feff701a9cc7c47bc794b6aaa97fd34a89b3ef3bcd1064c9b4f521f16616"
+      },
+      "SoulidityFoundation": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "manifest_sha256": "b9af9eec5599828254b2e398848028cbb9c62abb879be7e41c41858f0fdfb763"
+      },
+      "SoulidityStandard": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "manifest_sha256": "78f8424112601ad8ff73cec5935ed6ed60243db71c365052da2ccba18657f9f7"
+      }
+    },
+    "edges": [
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityVisual",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityFoundation",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityStandard",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      }
+    ],
+    "single_authority_per_package": true,
+    "single_resolver_identity_per_package": true
+  },
+  "Core": {
+    "nodes": {
+      "soulidity_v1": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_v1",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_v1",
+        "manifest_sha256": "3ee2f90c1e5697f171c22a34a40617c9c2eeead00ae7f0f4f4cc0baa728541df"
+      },
+      "SoulidityCommunity": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-community/move/soulidity_community",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_community",
+        "manifest_sha256": "bbfd44ba3aaf33b48739d0048750f9982448d6b086866d41a620ea795d06270f"
+      },
+      "SoulidityVisual": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "manifest_sha256": "7027feff701a9cc7c47bc794b6aaa97fd34a89b3ef3bcd1064c9b4f521f16616"
+      },
+      "SoulidityFoundation": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "manifest_sha256": "b9af9eec5599828254b2e398848028cbb9c62abb879be7e41c41858f0fdfb763"
+      },
+      "SoulidityStandard": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "manifest_sha256": "78f8424112601ad8ff73cec5935ed6ed60243db71c365052da2ccba18657f9f7"
+      },
+      "SoulidityModel": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "manifest_sha256": "e0e2e991dc5e57d99e5368820b0b26b372fca5e39b8b0b7cbf61cb2289a4882b"
+      },
+      "SoulidityContent": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "manifest_sha256": "c3beb702ce9145366c0adf51c808a363cae046f2599bddf875817b612aee7d92"
+      },
+      "SoulidityApplication": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application",
+        "manifest_sha256": "4887bcec4d20f15792fe5066cbccbb7b2e5cc9d597707446328732b6515f038e"
+      },
+      "SoulidityNative": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_native",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_native",
+        "manifest_sha256": "b707abfd6f9bd247e4363303243935b07ba427e13fe4b83da4b4fe83dcda86ea"
+      }
+    },
+    "edges": [
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityNative",
+        "manifest_locator": "../soulidity_native",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_native",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_native"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityApplication",
+        "manifest_locator": "../soulidity_application",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityContent",
+        "manifest_locator": "../soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityModel",
+        "manifest_locator": "../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "SoulidityCommunity",
+        "manifest_locator": "../soulidity_community",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_community",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-community/move/soulidity_community"
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "soulidity_v1",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      },
+      {
+        "consumer": "SoulidityCommunity",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityVisual",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityFoundation",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityStandard",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityContent",
+        "manifest_locator": "../soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityModel",
+        "manifest_locator": "../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "SoulidityContent",
+        "manifest_locator": "../soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content"
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      }
+    ],
+    "single_authority_per_package": true,
+    "single_resolver_identity_per_package": true
+  },
+  "Native": {
+    "nodes": {
+      "SoulidityNative": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_native",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_native",
+        "manifest_sha256": "b707abfd6f9bd247e4363303243935b07ba427e13fe4b83da4b4fe83dcda86ea"
+      },
+      "SoulidityContent": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "manifest_sha256": "c3beb702ce9145366c0adf51c808a363cae046f2599bddf875817b612aee7d92"
+      },
+      "SoulidityFoundation": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "manifest_sha256": "b9af9eec5599828254b2e398848028cbb9c62abb879be7e41c41858f0fdfb763"
+      },
+      "SoulidityStandard": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "manifest_sha256": "78f8424112601ad8ff73cec5935ed6ed60243db71c365052da2ccba18657f9f7"
+      }
+    },
+    "edges": [
+      {
+        "consumer": "SoulidityNative",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "SoulidityContent",
+        "manifest_locator": "../soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content"
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityNative",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      },
+      {
+        "consumer": "SoulidityFoundation",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityStandard",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      }
+    ],
+    "single_authority_per_package": true,
+    "single_resolver_identity_per_package": true
+  },
+  "Application": {
+    "nodes": {
+      "SoulidityApplication": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application",
+        "manifest_sha256": "4887bcec4d20f15792fe5066cbccbb7b2e5cc9d597707446328732b6515f038e"
+      },
+      "SoulidityVisual": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "manifest_sha256": "7027feff701a9cc7c47bc794b6aaa97fd34a89b3ef3bcd1064c9b4f521f16616"
+      },
+      "SoulidityFoundation": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "manifest_sha256": "b9af9eec5599828254b2e398848028cbb9c62abb879be7e41c41858f0fdfb763"
+      },
+      "SoulidityStandard": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "manifest_sha256": "78f8424112601ad8ff73cec5935ed6ed60243db71c365052da2ccba18657f9f7"
+      },
+      "SoulidityModel": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "manifest_sha256": "e0e2e991dc5e57d99e5368820b0b26b372fca5e39b8b0b7cbf61cb2289a4882b"
+      },
+      "SoulidityContent": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "manifest_sha256": "c3beb702ce9145366c0adf51c808a363cae046f2599bddf875817b612aee7d92"
+      }
+    },
+    "edges": [
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityContent",
+        "manifest_locator": "../soulidity_content",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_content"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityModel",
+        "manifest_locator": "../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityApplication",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      },
+      {
+        "consumer": "SoulidityVisual",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityFoundation",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityStandard",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityContent",
+        "provider": "Walrus",
+        "remote": {
+          "git": "https://github.com/MystenLabs/walrus.git",
+          "subdir": "mainnet-contracts/walrus",
+          "rev": "a19764ff77f501a79db88dc6d922a2c73848e989"
+        }
+      }
+    ],
+    "single_authority_per_package": true,
+    "single_resolver_identity_per_package": true
+  },
+  "PublicModelProducer": {
+    "nodes": {
+      "IndependentModelProducer": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/standard_examples/model_producer",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/standard_examples/model_producer",
+        "manifest_sha256": "c5cfadf8da4c40db41e84064a062d308f126090ff054d519927e5a66cb2b5018"
+      },
+      "SoulidityStandard": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "manifest_sha256": "78f8424112601ad8ff73cec5935ed6ed60243db71c365052da2ccba18657f9f7"
+      },
+      "SoulidityModel": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "manifest_sha256": "e0e2e991dc5e57d99e5368820b0b26b372fca5e39b8b0b7cbf61cb2289a4882b"
+      },
+      "SoulidityVisual": {
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "manifest_sha256": "7027feff701a9cc7c47bc794b6aaa97fd34a89b3ef3bcd1064c9b4f521f16616"
+      },
+      "SoulidityFoundation": {
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "manifest_sha256": "b9af9eec5599828254b2e398848028cbb9c62abb879be7e41c41858f0fdfb763"
+      }
+    },
+    "edges": [
+      {
+        "consumer": "IndependentModelProducer",
+        "provider": "SoulidityModel",
+        "manifest_locator": "../../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "resolver_identity_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+      },
+      {
+        "consumer": "IndependentModelProducer",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../../soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityStandard",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityStandard",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityFoundation",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+        "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "SoulidityVisual",
+        "manifest_locator": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "resolver_identity_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+        "authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+      },
+      {
+        "consumer": "SoulidityModel",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityVisual",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      },
+      {
+        "consumer": "SoulidityFoundation",
+        "provider": "Sui",
+        "remote": {
+          "git": "https://github.com/MystenLabs/sui.git",
+          "subdir": "crates/sui-framework/packages/sui-framework",
+          "rev": "2a0becb2fcc6989e492981104af67f62f2c9511a"
+        }
+      }
+    ],
+    "single_authority_per_package": true,
+    "single_resolver_identity_per_package": true
+  }
+}

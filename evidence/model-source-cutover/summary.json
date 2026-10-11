@@ -1,0 +1,157 @@
+{
+  "result": "PASS isolated candidate; actual source cutover pending root integration",
+  "source_equivalence": {
+    "production_source_file_count": 52,
+    "test_source_file_count": 66,
+    "actual_sources_unchanged": true,
+    "candidate_sources_equal_actual": true,
+    "model_four_sources": {
+      "sources/components.move": "2c7cd53d70fb85b87c3d15ad79a5c31a18e39d05d1ee373a4485108d7d68fd05",
+      "sources/policy.move": "78654d1cd083c0a85f9d9de5b36b0bbd8bab595e1d85fcc4ca534ebff51a7614",
+      "sources/assembly.move": "348b6ce070acb56d73f5940e9c1eb0897f95213b1416213b34f7135dbdd3fe98",
+      "sources/material_policy.move": "d3c40174c015a92567fb51965ee6691bb6586dbf1c23823994e9785607322448"
+    },
+    "module_function_ability_guard_changes": 0,
+    "shared_repository_files_written": 0
+  },
+  "manifest_files_changed": 4,
+  "local_locator_strings_changed": 6,
+  "baseline_manifest_scope": "exact actual old Core/Application/Model/model_producer manifests; relocated isolated source copies and existing Standard/Community/Visual locator targets",
+  "production_build_roots": [
+    "soulidity_model",
+    "soulidity_v1",
+    "soulidity_native",
+    "soulidity_application",
+    "standard_examples/model_producer",
+    "standard_examples/output_extension",
+    "standard_examples/visual_capture_extension"
+  ],
+  "production_build_counts": {
+    "baseline": 7,
+    "candidate-r4": 7
+  },
+  "production_build_all_pass": true,
+  "tests": {
+    "baseline": {
+      "passed": 126,
+      "failed": 0,
+      "filters": {
+        "scene_variant_tests": 26,
+        "physical_tests": 74,
+        "compact_binding_tests": 4,
+        "model_source_tests": 14,
+        "component_issuance_tests": 8
+      }
+    },
+    "candidate-r4": {
+      "passed": 126,
+      "failed": 0,
+      "filters": {
+        "scene_variant_tests": 26,
+        "physical_tests": 74,
+        "compact_binding_tests": 4,
+        "model_source_tests": 14,
+        "component_issuance_tests": 8
+      }
+    }
+  },
+  "artifact_comparison": [
+    {
+      "package": "soulidity_model",
+      "total": 99,
+      "raw_equal": 99,
+      "raw_different": 0,
+      "address_normalized_equal": 99,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": true
+    },
+    {
+      "package": "soulidity_v1",
+      "total": 174,
+      "raw_equal": 174,
+      "raw_different": 0,
+      "address_normalized_equal": 174,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": true
+    },
+    {
+      "package": "soulidity_native",
+      "total": 141,
+      "raw_equal": 141,
+      "raw_different": 0,
+      "address_normalized_equal": 141,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": false
+    },
+    {
+      "package": "soulidity_application",
+      "total": 154,
+      "raw_equal": 154,
+      "raw_different": 0,
+      "address_normalized_equal": 154,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": true
+    },
+    {
+      "package": "standard_examples/model_producer",
+      "total": 101,
+      "raw_equal": 101,
+      "raw_different": 0,
+      "address_normalized_equal": 101,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": true
+    },
+    {
+      "package": "standard_examples/output_extension",
+      "total": 157,
+      "raw_equal": 157,
+      "raw_different": 0,
+      "address_normalized_equal": 157,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": true
+    },
+    {
+      "package": "standard_examples/visual_capture_extension",
+      "total": 155,
+      "raw_equal": 155,
+      "raw_different": 0,
+      "address_normalized_equal": 155,
+      "dump_json_equal": true,
+      "digest_equal": true,
+      "addresses_changed": 0,
+      "generated_lock_changed": true
+    }
+  ],
+  "actual_historical_core_comparison": {
+    "baseline": "historical stored production dump from actual Core after Standard/Community/Visual migrations",
+    "baseline_path": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/build-evidence/retained-core-after-three-migrations/build.json",
+    "candidate_path": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/evidence/candidate-r4/soulidity_v1-build/build.json",
+    "raw_dump_json_equal": true,
+    "old_sha256": "35115d3b9c5b027712d918b445f1cbf22e1af6da9d46d0af19807bf3cef2c8dd",
+    "candidate_sha256": "35115d3b9c5b027712d918b445f1cbf22e1af6da9d46d0af19807bf3cef2c8dd",
+    "module_counts": [
+      52,
+      52
+    ],
+    "digest_equal": true,
+    "boundary": "Historical actual build evidence metadata determines precise inputs. Candidate remains isolated; actual post-integration build must capture fresh bytecode, locks and final source identities."
+  },
+  "tool_sha256": "1d7baa7c7314113671415acfa20279b1eedb6ae6d04f286988a00da285e769c3",
+  "source_mutations": 0,
+  "rpc_calls": 0,
+  "signed_transactions": 0,
+  "deployed": false,
+  "raw_identity_boundary": "Actual post-integration dumps and locks must still be captured; current raw equality does not establish published identity/linkage/runtime."
+}

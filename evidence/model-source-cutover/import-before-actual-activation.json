@@ -1,0 +1,9 @@
+{
+  "source": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16",
+  "changed_manifests": 4,
+  "changed_local_strings": 6,
+  "sources_changed": 0,
+  "tool_import": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/ecosystem-devops/tools/repository-extraction/emit_model_locators.py",
+  "tool_sha256": "0ffe0e7ba376ab474db190f9b8d9dde2ca3b5c6875b8bf9ba1e4ad180d3b2952",
+  "actual_production_and_activation": "pending; capture next"
+}

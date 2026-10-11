@@ -1,0 +1,14 @@
+{
+  "baseline_manifest_sha_equal_actual_input_before": {
+    "soulidity_standard": true,
+    "soulidity_community": true,
+    "soulidity_visual": true,
+    "soulidity_model": true,
+    "soulidity_foundation": true,
+    "soulidity_content": true,
+    "soulidity_application": true,
+    "soulidity_native": true,
+    "soulidity_v1": true
+  },
+  "baseline_has_no_candidate_local_locator_edits": true
+}

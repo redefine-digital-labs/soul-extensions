@@ -1,0 +1,52 @@
+{
+  "kind": "generated-local-development-path-locators",
+  "authority_root": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity",
+  "ecosystem_root": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem",
+  "changes": [
+    {
+      "target": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model/Move.toml",
+      "candidate": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/soul-extensions/move/soulidity_model/Move.toml",
+      "baseline": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/before/soul-extensions/move/soulidity_model/Move.toml",
+      "before_sha256": "e0e2e991dc5e57d99e5368820b0b26b372fca5e39b8b0b7cbf61cb2289a4882b",
+      "after_sha256": "a1779d1edb99feb35d35a8281302561d529aa4245f50e2e7829e2fa57574274a",
+      "changed_dependency_names": [
+        "SoulidityStandard",
+        "SoulidityFoundation",
+        "SoulidityVisual"
+      ]
+    },
+    {
+      "target": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_v1/Move.toml",
+      "candidate": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/retained/move/soulidity_v1/Move.toml",
+      "baseline": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/before/retained/move/soulidity_v1/Move.toml",
+      "before_sha256": "3ee2f90c1e5697f171c22a34a40617c9c2eeead00ae7f0f4f4cc0baa728541df",
+      "after_sha256": "43676cad6e96df148663fe1d433e4bac70e20e8ee335847ee45be6115f012782",
+      "changed_dependency_names": [
+        "SoulidityModel"
+      ]
+    },
+    {
+      "target": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application/Move.toml",
+      "candidate": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/retained/move/soulidity_application/Move.toml",
+      "baseline": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/before/retained/move/soulidity_application/Move.toml",
+      "before_sha256": "4887bcec4d20f15792fe5066cbccbb7b2e5cc9d597707446328732b6515f038e",
+      "after_sha256": "1ed634d8a468468179c2d00b83aa5dac15bb2d78e4e4bc2e01f48b516fd4832e",
+      "changed_dependency_names": [
+        "SoulidityModel"
+      ]
+    },
+    {
+      "target": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/standard_examples/model_producer/Move.toml",
+      "candidate": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/retained/move/standard_examples/model_producer/Move.toml",
+      "baseline": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/integration-payload/before/retained/move/standard_examples/model_producer/Move.toml",
+      "before_sha256": "c5cfadf8da4c40db41e84064a062d308f126090ff054d519927e5a66cb2b5018",
+      "after_sha256": "03a86ce1dc81ccadffb84e594dbb93774dbbb419c76a8d5af54fe45dd0a4b6c3",
+      "changed_dependency_names": [
+        "SoulidityModel"
+      ]
+    }
+  ],
+  "source_code_changes": 0,
+  "publication_or_remote_release_pin": false,
+  "portability": "Regenerate these direct relative paths for the actual checkout layout; do not import them into remote release CI as immutable pins."
+}

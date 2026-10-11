@@ -1,0 +1,22 @@
+{
+  "kind": "historical local frozen dependency cache",
+  "runtime_gate": false,
+  "dependencies": [
+    {
+      "package": "soulidity_foundation",
+      "authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+      "materialized_read_only": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/.deps/soulidity_foundation",
+      "files": {
+        "Move.toml": "b9af9eec5599828254b2e398848028cbb9c62abb879be7e41c41858f0fdfb763",
+        "sources/economics.move": "18a683402ff9438f5945e8070426a33e532ef851b5b4b810d7be5c85e98de039",
+        "sources/package_roles.move": "4569fb705519bf0fed418083c38b2d98fab001d25f1a0cc9b06ce9f50003e229",
+        "sources/revenue.move": "9e307e4d6c944419179bc9e4fbcc39e006e6e118c9d6d083ee3e23189515fdaa",
+        "sources/source_authority.move": "e2b4ee56df6962bba16695ca4cec4f6e1816c6fa6dd9b83cd8eeb8147c32883b"
+      }
+    }
+  ],
+  "remote_revision": null,
+  "remaining": "Local locators are checkout-specific. Immutable release pins and real published type/linkage still require release validation.",
+  "currently_consumed": false,
+  "active_development_locators": "move/soulidity_model/Move.toml resolves Standard/Foundation/Visual through one coherent actual source graph"
+}

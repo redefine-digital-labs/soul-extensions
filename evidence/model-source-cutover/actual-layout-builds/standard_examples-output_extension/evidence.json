@@ -1,0 +1,25 @@
+{
+  "root": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/standard_examples/output_extension",
+  "command": [
+    "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/output/contract-rebuild/local-ptb-2026-10-08/tooling/sui",
+    "move",
+    "build",
+    "--path",
+    "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/standard_examples/output_extension",
+    "--install-dir",
+    "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/standard_examples-output_extension/install",
+    "--dump-bytecode-as-base64",
+    "--no-tree-shaking",
+    "--with-unpublished-dependencies"
+  ],
+  "exit_code": 0,
+  "inputs_before": {
+    "Move.toml": "67f634329491a7c96eee134d9e95581dd43045af0739dd62b67eb2b0a93483cd"
+  },
+  "inputs_after": {
+    "Move.toml": "67f634329491a7c96eee134d9e95581dd43045af0739dd62b67eb2b0a93483cd"
+  },
+  "dump_sha256": "aadc8a8b539931a36cce74f61f8ee1f7b25a9eeaffe0bd8673cbfdaaf115437e",
+  "log_sha256": "4e85c93f79bfb00b737f640fe8432a3e780687f9db7ef5f3558332e3511100e1",
+  "transactions": 0
+}

@@ -1,0 +1,28 @@
+[NOTE] Dependencies on Sui, MoveStdlib, Bridge, DeepBook, and SuiSystem are automatically added, but this feature is disabled for your package because you have explicitly included dependencies on Sui. Consider removing these dependencies from `Move.toml`.
+INCLUDING DEPENDENCY MoveStdlib
+INCLUDING DEPENDENCY SoulidityContent
+INCLUDING DEPENDENCY SoulidityFoundation
+INCLUDING DEPENDENCY SoulidityModel
+INCLUDING DEPENDENCY SoulidityStandard
+INCLUDING DEPENDENCY SoulidityVisual
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY WAL
+INCLUDING DEPENDENCY Walrus
+BUILDING SoulidityApplication
+warning[WC09001]: unused alias
+   ┌─ ./sources/forms.move:14:22
+   │
+14 │ use soulidity_model::policy;
+   │                      ^^^^^^ Unused 'use' of alias 'policy'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[WC04039]: unable to determine literal's type
+    ┌─ ./sources/character.move:140:35
+    │
+140 │     let n=(if(reference.is_some())1 else 0)+(if(item.is_some())1 else 0)+(if(bound.is_some())1 else 0);assert!(n==1,ERights);
+    │                                   ^ Could not determine a concrete type for this numeric literal, so defaulting to 'u64'
+    │
+    = To avoid this warning, add an explicit type annotation, e.g., '<num>u64'
+    = This warning can be suppressed with '#[allow(untyped_literal)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+

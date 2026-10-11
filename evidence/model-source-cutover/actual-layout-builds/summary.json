@@ -1,0 +1,7 @@
+{
+  "all_production_pass": true,
+  "roots": 6,
+  "model_build_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/build-evidence/soulidity_model-r3/evidence.json",
+  "Model_existing_VM": "126/126 baseline and candidate in isolated graph; actual full VM not repeated",
+  "transactions": 0
+}
