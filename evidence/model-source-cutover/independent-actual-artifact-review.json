@@ -1,0 +1,270 @@
+{
+  "review": "Independent read-only actual Model cutover artifact review",
+  "completed_at": "2026-10-10T13:05:13.874704+00:00",
+  "result": "PASS: 52 production source SHAs preserved; four manifests only six local locator replacements; seven actual production dumps and complete raw module inventories byte-equivalent to isolated baseline and r4. This is compiler evidence only.",
+  "roots": {
+    "actual": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity",
+    "ecosystem": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem",
+    "isolated": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16"
+  },
+  "reviewer_actions": {
+    "shared_writes": 0,
+    "test_or_build_runs": 0,
+    "rpc_calls": 0,
+    "signed_transactions": 0
+  },
+  "handbook": {
+    "version": "1.0",
+    "sections": [
+      "1-5",
+      "8.3-8.4",
+      "9",
+      "12"
+    ],
+    "operating_model_section": 8
+  },
+  "source_preservation": {
+    "production_file_count": 52,
+    "package_counts": {
+      "soulidity_standard": 1,
+      "soulidity_community": 4,
+      "soulidity_visual": 1,
+      "soulidity_model": 4,
+      "soulidity_foundation": 4,
+      "soulidity_content": 12,
+      "soulidity_application": 10,
+      "soulidity_native": 2,
+      "soulidity_v1": 14
+    },
+    "all_current_source_sha_equal_saved_input": true,
+    "mismatches": [],
+    "saved_input_path": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16/source-inputs-before.json",
+    "saved_input_sha256": "2b168fbccacd23f8f38871396af95c65e7c0a260afceedd8753db571324d4cb2",
+    "imported_input_exact_equal": true
+  },
+  "model_authority": {
+    "old_is_symlink": true,
+    "old_resolves_to_new": true,
+    "new_is_directory_not_symlink": true,
+    "frozen_old_model_sources_equal_before": true,
+    "frozen_old_model_manifest_equal_before": true,
+    "frozen_path": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/output/ecosystem-construction/repository-split-2026-10-10/frozen-before/soulidity_model"
+  },
+  "manifest_scope": {
+    "files": 4,
+    "local_strings": 6,
+    "only_six_local_strings": true,
+    "changes": [
+      {
+        "target": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model/Move.toml",
+        "before_sha_matches": true,
+        "actual_sha_matches_payload_after": true,
+        "actual_exact_equals_payload_candidate": true,
+        "only_local_string_text_changed": true,
+        "changed_dependency_names_exact": true,
+        "changes": [
+          {
+            "dependency": "SoulidityFoundation",
+            "before": "../../.deps/soulidity_foundation",
+            "after": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation",
+            "resolved_authority": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation"
+          },
+          {
+            "dependency": "SoulidityStandard",
+            "before": "../../../soul-standard/move/soulidity_standard",
+            "after": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard",
+            "resolved_authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-standard/move/soulidity_standard"
+          },
+          {
+            "dependency": "SoulidityVisual",
+            "before": "../soulidity_visual",
+            "after": "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual",
+            "resolved_authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_visual"
+          }
+        ]
+      },
+      {
+        "target": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_v1/Move.toml",
+        "before_sha_matches": true,
+        "actual_sha_matches_payload_after": true,
+        "actual_exact_equals_payload_candidate": true,
+        "only_local_string_text_changed": true,
+        "changed_dependency_names_exact": true,
+        "changes": [
+          {
+            "dependency": "SoulidityModel",
+            "before": "../soulidity_model",
+            "after": "../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+            "resolved_authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+          }
+        ]
+      },
+      {
+        "target": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_application/Move.toml",
+        "before_sha_matches": true,
+        "actual_sha_matches_payload_after": true,
+        "actual_exact_equals_payload_candidate": true,
+        "only_local_string_text_changed": true,
+        "changed_dependency_names_exact": true,
+        "changes": [
+          {
+            "dependency": "SoulidityModel",
+            "before": "../soulidity_model",
+            "after": "../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+            "resolved_authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+          }
+        ]
+      },
+      {
+        "target": "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/standard_examples/model_producer/Move.toml",
+        "before_sha_matches": true,
+        "actual_sha_matches_payload_after": true,
+        "actual_exact_equals_payload_candidate": true,
+        "only_local_string_text_changed": true,
+        "changed_dependency_names_exact": true,
+        "changes": [
+          {
+            "dependency": "SoulidityModel",
+            "before": "../../soulidity_model",
+            "after": "../../../../../../../Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+            "resolved_authority": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model"
+          }
+        ]
+      }
+    ],
+    "scope_note": "Compare new prepared Model manifest and three retained consumers against saved integration payload before copies. Frozen original old Model is preserved separately."
+  },
+  "actual_artifacts": [
+    {
+      "package": "soulidity_model",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-model-production/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 10,
+      "production_raw_modules": 99,
+      "dump_file_sha256": "0653c98f19d37255277c1114a3795b234f4bccb3313ec6022863c9c27263abc4",
+      "raw_dump_modules_sha256": "a1f3a3cc2def348c928719b32d01eab7946d6d5889535162a0e2b552869ea38b",
+      "complete_raw_inventory_sha256": "de4f773bd2351bef9feb8cd48a0eceec06fa2d7b47a1bf044118ff57d8863b17",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    },
+    {
+      "package": "soulidity_v1",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/soulidity_v1/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 52,
+      "production_raw_modules": 174,
+      "dump_file_sha256": "35115d3b9c5b027712d918b445f1cbf22e1af6da9d46d0af19807bf3cef2c8dd",
+      "raw_dump_modules_sha256": "439fd4a17eae9fbc3ad2791edc606d9cd063a794a92866bb151c7da2903d22fa",
+      "complete_raw_inventory_sha256": "59437b73ffdd740327bb9f5c863397b2b8544ffa92e181a98409f225b944e543",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    },
+    {
+      "package": "soulidity_native",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/soulidity_native/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 19,
+      "production_raw_modules": 141,
+      "dump_file_sha256": "56496c5687b7a66f883d20c77191d0830a1a9b067393dd217a7bed71db6ff600",
+      "raw_dump_modules_sha256": "b0c11805e1a22fc85189b80eaaaf80d7fee8242a69954707e0be6f8275714031",
+      "complete_raw_inventory_sha256": "367bafc91483e02f5d5665c62c7529ac53b0c7950cc84748d318f3f1a99938fa",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    },
+    {
+      "package": "soulidity_application",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/soulidity_application/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 32,
+      "production_raw_modules": 154,
+      "dump_file_sha256": "0ac4227a9c05bf25cb0769887b2238b7d09e9ccb0f7a23353d9152c29cd7fa39",
+      "raw_dump_modules_sha256": "769594ae6a17374e990bef6f161da27451acc2cfdebddd74243dcb1c13b4ff42",
+      "complete_raw_inventory_sha256": "112d3bd587455e715f7601fe09bca7cf55e21298cd35d8f42df9d5ef33c0bc3a",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    },
+    {
+      "package": "standard_examples/model_producer",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/standard_examples-model_producer/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 11,
+      "production_raw_modules": 101,
+      "dump_file_sha256": "0316c53839d01f368ba3ac1ec6f8912f1d250cdfab61c71fabf9268950717293",
+      "raw_dump_modules_sha256": "6622f426f4e5e6f728a23cd9dac57b080e2b1116aaa9e7d45046eccf9b035c5f",
+      "complete_raw_inventory_sha256": "1ab709f194af64072d1a4da31eb40de8f795cb04347ebb8ac7148b14009b4ab6",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    },
+    {
+      "package": "standard_examples/output_extension",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/standard_examples-output_extension/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 34,
+      "production_raw_modules": 157,
+      "dump_file_sha256": "aadc8a8b539931a36cce74f61f8ee1f7b25a9eeaffe0bd8673cbfdaaf115437e",
+      "raw_dump_modules_sha256": "b7a57eb65ac3a68104532ed6525cc56a600f9b06c2de60ab0c641811133703ee",
+      "complete_raw_inventory_sha256": "2a8e3435c060e699f841c7993509178cc495d59ae3e184295ccc758802b356ec",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    },
+    {
+      "package": "standard_examples/visual_capture_extension",
+      "actual_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-layout-builds/standard_examples-visual_capture_extension/evidence.json",
+      "exit_code": 0,
+      "dump_modules": 33,
+      "production_raw_modules": 155,
+      "dump_file_sha256": "0953b15150310d286ec3cab1f2a22aa16f62cf453640f6cca3acb9687096f058",
+      "raw_dump_modules_sha256": "8b21aec87f0c583d9861ccf0e914fde4c028121bfff4973234e2630276b3f101",
+      "complete_raw_inventory_sha256": "4a4dc17c3e8172e190a5f2b2ff376c6260af63f1cf3382455f1a1687670d30ea",
+      "dump_bytes_equal_baseline_and_r4": true,
+      "digest_equal_baseline_and_r4": true,
+      "raw_inventory_equal_baseline_and_r4": true,
+      "isolated_record_hashes_independently_verified": true
+    }
+  ],
+  "count_boundary": "dump_modules are linkage-filtered dump/publish module counts; production_raw_modules include complete compiled dependency graph. Counts belong to each build and are not summed as distinct modules.",
+  "all_seven_production_build_exit0": true,
+  "all_seven_dump_bytes_digest_equal_baseline_and_r4": true,
+  "all_seven_complete_raw_inventory_equal_baseline_and_r4": true,
+  "historical_findings": [
+    {
+      "finding": "Initial r3 actual Model evidence preserved production dump but no independent full 99 .mv directory; current package build was populated by test0 (200 .mv).",
+      "state": "RESOLVED for evidence preservation",
+      "resolution_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-model-production/evidence.json",
+      "resolution": "Coordinator captured a fresh standalone production --install-dir with 99 .mv. Reviewer read-only verified all99 exact hashes against baseline/r4 and comparison records; original r3/test0 evidence remains historical."
+    },
+    {
+      "finding": "Imported isolated summary/import/report and artifact boundary text had pending or raw-differ historical wording on initial observation.",
+      "state": "HISTORICAL imported documentation; use this actual evidence comparison for claims."
+    }
+  ],
+  "verification_boundary": {
+    "isolated_existing_cross_package_vm": "126/126 baseline and candidate-r4 recorded; no tests rerun by reviewer",
+    "actual_full_vm": "Not repeated in actual graph",
+    "independent_model_test_zero": "Zero test cases; command success is not behavior PASS",
+    "published_linkage": "Not tested",
+    "published_type_origins": "Not tested",
+    "chain_permissions_runtime": "Not tested",
+    "independent_release": "Not established"
+  },
+  "new_model_production_inputs_before_after": {
+    "Move.toml": "a1779d1edb99feb35d35a8281302561d529aa4245f50e2e7829e2fa57574274a",
+    "Move.lock": "26a7f45dabe8f64d038f8a5b6e79167bfa7255e2b47807eaa2295ffece1300b7"
+  },
+  "new_model_production_input_manifest_lock_unchanged": true,
+  "new_model_production_test_invoked": false,
+  "new_model_dump_equal_original_r3_capture": true,
+  "original_model_test0_evidence": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/build-evidence/soulidity_model-r3/test.log"
+}

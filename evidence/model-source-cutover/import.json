@@ -1,0 +1,16 @@
+{
+  "source": "/Users/naoer/.codex/worktrees/model-cutover-cl_3aw16",
+  "changed_manifests": 4,
+  "changed_local_strings": 6,
+  "sources_changed": 0,
+  "tool_import": "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/ecosystem-devops/tools/repository-extraction/emit_model_locators.py",
+  "tool_sha256": "0ffe0e7ba376ab474db190f9b8d9dde2ca3b5c6875b8bf9ba1e4ad180d3b2952",
+  "actual_production_and_activation": "passed for7 actual production roots; oldModel locator resolves to sole new repository source",
+  "actual_layout_evidence": "actual-layout-builds/summary.json",
+  "new_model_build_evidence": "../../../build-evidence/soulidity_model-r3/evidence.json",
+  "actual_source_activation": "workspace.json packages[soulidity_model].state active-source",
+  "runtime_or_published_linkage": "not verified; isolated126 VM results remain scoped original regression evidence",
+  "independent_actual_artifact_review": "independent-actual-artifact-review.json",
+  "separate_model_production": "actual-model-production/evidence.json",
+  "actual7_raw_equals_isolated_baseline_and_candidate": true
+}

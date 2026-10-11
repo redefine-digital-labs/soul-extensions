@@ -1,0 +1,1177 @@
+[
+  {
+    "path": "move/soulidity_v1/Move.toml",
+    "line": 9,
+    "text": "SoulidityModel = { local = \"../soulidity_model\" }"
+  },
+  {
+    "path": "move/soulidity_v1/tests/capacity_tests.move",
+    "line": 7,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_player_tests.move",
+    "line": 11,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_player_tests.move",
+    "line": 12,
+    "text": "use soulidity_model::assembly::{Self,Scope,PartKey};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_player_tests.move",
+    "line": 14,
+    "text": "use soulidity_model::components::Item;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_player_tests.move",
+    "line": 45,
+    "text": "#[test,expected_failure(abort_code=4,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_player_tests.move",
+    "line": 68,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/royalty_tests.move",
+    "line": 15,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/market_tests.move",
+    "line": 12,
+    "text": "use soulidity_model::components::Item;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 8,
+    "text": "use soulidity_model::assembly::{Self,State,Variant,Equipped};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 9,
+    "text": "use soulidity_model::policy::{Self,Source,Adapter};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 59,
+    "text": "#[expected_failure(abort_code=5,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 62,
+    "text": "#[expected_failure(abort_code=5,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 65,
+    "text": "#[expected_failure(abort_code=5,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 151,
+    "text": "fun activate_pose(sc:&mut Scenario,s:&mut Soul,r:soulidity_application::forms::Reference,items:vector<soulidity_model::components::Item>){"
+  },
+  {
+    "path": "move/soulidity_v1/tests/scene_variant_tests.move",
+    "line": 197,
+    "text": "#[expected_failure(abort_code=2,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/issuance_tests.move",
+    "line": 7,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/issuance_tests.move",
+    "line": 62,
+    "text": "#[expected_failure(abort_code=2,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/output_tests.move",
+    "line": 13,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/loadout_tests.move",
+    "line": 11,
+    "text": "use soulidity_model::components::Item;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/loadout_tests.move",
+    "line": 14,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/loadout_tests.move",
+    "line": 112,
+    "text": "#[expected_failure(abort_code=2,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/loadout_tests.move",
+    "line": 248,
+    "text": "#[expected_failure(abort_code=3,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/fixtures.move",
+    "line": 7,
+    "text": "use soulidity_model::policy::{Self,Definition,Layout};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 10,
+    "text": "use soulidity_model::material_policy::{Self,Terms};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 13,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 222,
+    "text": "#[expected_failure(abort_code=1,location=soulidity_model::material_policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 225,
+    "text": "#[expected_failure(abort_code=1,location=soulidity_model::material_policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 228,
+    "text": "#[expected_failure(abort_code=1,location=soulidity_model::material_policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 231,
+    "text": "#[expected_failure(abort_code=1,location=soulidity_model::material_policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 316,
+    "text": "#[expected_failure(abort_code=1,location=soulidity_model::material_policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/physical_tests.move",
+    "line": 319,
+    "text": "#[expected_failure(abort_code=1,location=soulidity_model::material_policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/component_issuance_tests.move",
+    "line": 6,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/component_issuance_tests.move",
+    "line": 7,
+    "text": "use soulidity_model::components::{Self,Item};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/component_issuance_tests.move",
+    "line": 33,
+    "text": "#[test,expected_failure(abort_code=3,location=soulidity_model::components)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/component_issuance_tests.move",
+    "line": 38,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::components)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/component_issuance_tests.move",
+    "line": 43,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::components)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/component_issuance_tests.move",
+    "line": 48,
+    "text": "#[test,expected_failure(abort_code=2,location=soulidity_model::components)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/compact_binding_tests.move",
+    "line": 6,
+    "text": "use soulidity_model::{assembly,components,policy};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 7,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 27,
+    "text": "#[test,expected_failure(abort_code=4,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 34,
+    "text": "#[test,expected_failure(abort_code=4,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 59,
+    "text": "    let native_product=catalog::assembly_profile(&p,1);let state=soulidity_model::assembly::new(&native_product,sc.ctx());"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 60,
+    "text": "    assert!(!soulidity_model::assembly::native_matches(&state,&fixtures::scene(),&source,soulidity_model::assembly::root_part(b\"free\")),1);"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 61,
+    "text": "    let scope=soulidity_model::assembly::scope(PolicyProducer{},&foreign,object::id(&cfg),1,fixtures::h(1));"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 62,
+    "text": "    let profile=soulidity_model::assembly::profile(PolicyProducer{},&foreign,scope,option::none(),fixtures::scene(),vector[b\"free\"],vector[]);"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 63,
+    "text": "    assert!(soulidity_model::assembly::profile_scope(&profile)==scope && soulidity_model::assembly::scope_type(&scope)==type_name::with_defining_ids<IndependentProduct>(),2);"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 64,
+    "text": "    soulidity_model::assembly::destroy(state);destroy_product(foreign);test_scenario::return_shared(cfg);test_scenario::return_shared(p);sc.end();"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 66,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 71,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 76,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 81,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 86,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 91,
+    "text": "#[test,expected_failure(abort_code=4,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 94,
+    "text": "    let _=soulidity_model::assembly::scope(v,&p,catalog::protocol(&p),1,catalog::policy_hash(&v));test_scenario::return_shared(p);sc.end();"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 96,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 98,
+    "text": "    let mut sc=fixtures::setup(0,0,0,0,0,0);let p:Product<USD> =sc.take_shared();let foreign=IndependentProduct{id:object::new(sc.ctx())};let parent=soulidity_model::assembly::profile_scope(&catalog::assembly_profile(&p,1));"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 99,
+    "text": "    let scope=soulidity_model::assembly::scope(PolicyProducer{},&foreign,catalog::protocol(&p),1,fixtures::h(1));"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 100,
+    "text": "    let _=soulidity_model::assembly::profile(PolicyProducer{},&foreign,scope,option::some(parent),fixtures::scene(),vector[b\"free\"],vector[]);"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 103,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 106,
+    "text": "    let scope=soulidity_model::assembly::scope(PolicyProducer{},&one,catalog::protocol(&p),1,fixtures::h(1));"
+  },
+  {
+    "path": "move/soulidity_v1/tests/model_source_tests.move",
+    "line": 107,
+    "text": "    let _=soulidity_model::assembly::profile(PolicyProducer{},&two,scope,option::none(),fixtures::scene(),vector[b\"free\"],vector[]);"
+  },
+  {
+    "path": "move/soulidity_v1/tests/primary_snapshot_tests.move",
+    "line": 10,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_tests.move",
+    "line": 10,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/release_tests.move",
+    "line": 17,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/release_tests.move",
+    "line": 279,
+    "text": "    let terms=soulidity_model::material_policy::terms(policy::definition_hash(&fixtures::def(b\"free\",2,10)),fixtures::h(90),mode,if(mode==2)2 else 0,price,3,true);let version=catalog::with_physical(v(f,extra,0),vector[terms]);let living=storage_fixture::blob(&mut f.sys,100,false,true,f.sc.ctx());let manifest=storage_fixture::blob(&mut f.sys,101,false,true,f.sc.ctx());"
+  },
+  {
+    "path": "move/soulidity_v1/tests/release_tests.move",
+    "line": 373,
+    "text": "fun metadata_definition_cannot_change_after_physical_terms_pin_its_hash(){let mut f=setup();let mut m=metadata_start(&mut f);metadata_append(&mut f,&mut m,vector[metadata_def(0,1)],0);let def=catalog::definitions_ref(soulidity_v1::metadata::version(&m))[0];let terms=soulidity_model::material_policy::terms(policy::definition_hash(&def),fixtures::h(90),0,0,0,3,true);{let F{out:_,sc,p,cap,cfg,sys,nodes:_,clock:_}=&mut f;soulidity_v1::metadata::append_physical(&mut m,p,cap,cfg,vector[terms],sys,1,sc.ctx())};metadata_extend(&mut f,&mut m,metadata_fragments(1,2),2);soulidity_v1::metadata::cancel(m,f.sc.ctx());end(f)}"
+  },
+  {
+    "path": "move/soulidity_v1/tests/forms_tests.move",
+    "line": 8,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/forms_tests.move",
+    "line": 21,
+    "text": "fun activate(sc:&mut Scenario,s:&mut Soul,r:Reference,items:vector<soulidity_model::components::Item>):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/tests/visual_tests.move",
+    "line": 10,
+    "text": "use soulidity_model::policy::{Self,Definition};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/visual_tests.move",
+    "line": 143,
+    "text": "fun removing_rule_provider_never_traps_actual_free_item(){let(mut sc,id)=setup(5);let root=mint(&mut sc,id,false);let mut s:Soul=sc.take_from_sender_by_id(root);let free=soul::free_id(&soul::binding(&s,b\"free\").destroy_some()).destroy_some();soul::clear_reference(&mut s,b\"ref\",0);let it=soul::detach(&mut s,b\"free\",1);assert!(object::id(&it)==free,0);transfer::public_transfer(it,@0xb);sc.return_to_sender(s);sc.next_tx(@0xb);let it:soulidity_model::components::Item=sc.take_from_sender_by_id(free);sc.return_to_sender(it);sc.end();}"
+  },
+  {
+    "path": "move/soulidity_v1/tests/visual_tests.move",
+    "line": 155,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 11,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 12,
+    "text": "use soulidity_model::assembly::{Self,Scope,PartKey};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 14,
+    "text": "use soulidity_model::components::Item;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 23,
+    "text": "use soulidity_model::material_policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 107,
+    "text": "#[test,expected_failure(abort_code=4,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 164,
+    "text": "#[test,expected_failure(abort_code=1,location=soulidity_model::assembly)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 175,
+    "text": "#[test,expected_failure(abort_code=2,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 233,
+    "text": " let(mut sc,maker,mut a,b,mut cfg,clock,p,id)=fresh_enhancement(2);let mut s:Soul=sc.take_from_sender_by_id(id);expect_no_items(buy_choice(&mut sc,&mut s,&maker,&mut a,&mut cfg,&clock,b\"pack-style\",73));let old=soul::free_id(&soul::binding_scoped(&s,key(&a)).destroy_some()).destroy_some();let items=buy_choice(&mut sc,&mut s,&maker,&mut a,&mut cfg,&clock,b\"alt-style\",74);assert!(items.length()==1 && object::id(&items[0])==old && soul::free_id(&soul::binding_scoped(&s,key(&a)).destroy_some())!=option::some(old) && soul::bound_count(&s)==0 && soul::reference_count(&s)==0,1);items.do!(|it|transfer::public_transfer(it,@0xb));sc.return_to_sender(s);sc.next_tx(@0xb);let it:Item=sc.take_from_sender_by_id(old);assert!(policy::source_definition_hash(soulidity_model::components::source(&it))==policy::definition_hash(&definition(&scene(true),b\"pack-style\",2)),2);sc.return_to_sender(it);end(F{sc,maker,a,b,cfg,clock,p})"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_soul_tests.move",
+    "line": 271,
+    "text": "#[test,expected_failure(abort_code=2,location=soulidity_model::policy)]"
+  },
+  {
+    "path": "move/soulidity_v1/tests/pack_publication_tests.move",
+    "line": 7,
+    "text": "use soulidity_model::policy::{Self,Definition};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/vault_edit_tests.move",
+    "line": 12,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/vault_edit_tests.move",
+    "line": 26,
+    "text": "fun activate(sc:&mut Scenario,s:&mut Soul,r:forms::Reference,items:vector<soulidity_model::components::Item>):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/tests/commerce_tests.move",
+    "line": 12,
+    "text": "use soulidity_model::components::{Self as item,Item};"
+  },
+  {
+    "path": "move/soulidity_v1/tests/commerce_tests.move",
+    "line": 13,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/tests/state_configuration_tests.move",
+    "line": 14,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/sources/release.move",
+    "line": 20,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 10,
+    "text": "use soulidity_model::policy::Layout;"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 18,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 24,
+    "text": "public struct Purchase has copy,drop,store {definition:vector<u8>,part:soulidity_model::assembly::PartKey,layout:Layout}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 25,
+    "text": "public struct InstalledChoice has copy,drop {source:vector<u8>,part:soulidity_model::assembly::PartKey,layout:Layout,item:Option<ID>,returned:Option<ID>}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 28,
+    "text": "public fun purchase(definition:vector<u8>,part:soulidity_model::assembly::PartKey,layout:Layout):Purchase{policy::assert_hash(&definition);Purchase{definition,part,layout}}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 32,
+    "text": "public(package) fun enhance_maker<C>(s:&mut Soul,maker:&mut Product<C>,cfg:&mut Config<C>,expected:u64,policy_hash:vector<u8>,choices:vector<Purchase>,attempt:vector<u8>,fee_revision:u64,expiry:u64,payment:Coin<C>,clock:&Clock,ctx:&mut TxContext):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 38,
+    "text": "public(package) fun enhance_pack<C>(s:&mut Soul,pack:&mut Product<C>,maker:&Product<C>,cfg:&mut Config<C>,version:u64,expected:u64,policy_hash:vector<u8>,choices:vector<Purchase>,attempt:vector<u8>,fee_revision:u64,expiry:u64,payment:Coin<C>,clock:&Clock,ctx:&mut TxContext):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 44,
+    "text": "fun enhance<C>(s:&mut Soul,p:&mut Product<C>,cfg:&mut Config<C>,version:u64,expected:u64,policy_hash:vector<u8>,choices:vector<Purchase>,attempt:vector<u8>,expiry:u64,payment:Coin<C>,clock:&Clock,ctx:&mut TxContext):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 56,
+    "text": "    choices.do!(|c|{let permit=catalog::issue(p,version,c.definition,s);let src=*soulidity_model::components::preview(&permit);let previous=soul::replace_issued(&enhancement,s,permit,c.part,c.layout,ctx);let old=previous.map_ref!(|it|object::id(it));previous.do!(|it|returned.push_back(it));let binding=soul::binding_scoped(s,c.part).destroy_some();installed.push_back(InstalledChoice{source:policy::source_hash(&src),part:c.part,layout:c.layout,item:soul::free_id(&binding),returned:old})});"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 96,
+    "text": "public(package) fun select_scoped<C>(b:&mut Build,product:&mut Product<C>,definition_hash:vector<u8>,part:soulidity_model::assembly::PartKey,layout:Layout,ctx:&mut TxContext) {"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 106,
+    "text": "public(package) fun select_player_scoped<C>(b:&mut Build,product:&mut Product<C>,p:&Player,part:soulidity_model::assembly::PartKey,expected_player:u64,ctx:&mut TxContext) {"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 110,
+    "text": "    soul::set_initial_colors(&b.draft,&mut b.soul,player::colors(p),ctx);player::profiles(p).do_ref!(|profile|{let scope=soulidity_model::assembly::snapshot_scope(profile);if(soul::profile_snapshots(&b.soul).any!(|x|soulidity_model::assembly::snapshot_scope(x)==scope))soul::set_initial_pack_colors(&b.draft,&mut b.soul,scope,player::pack_colors(p,scope),ctx)});select_scoped(b,product,policy::source_definition_hash(source),part,player::layout(&selected),ctx)"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 148,
+    "text": "public(package) fun select<C>(b:&mut Build,product:&mut Product<C>,definition_hash:vector<u8>,part:vector<u8>,layout:Layout,ctx:&mut TxContext){select_scoped(b,product,definition_hash,soulidity_model::assembly::root_part(part),layout,ctx)}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/issuer.move",
+    "line": 151,
+    "text": "public(package) fun select_player<C>(b:&mut Build,product:&mut Product<C>,p:&Player,part:vector<u8>,expected_player:u64,ctx:&mut TxContext){select_player_scoped(b,product,p,soulidity_model::assembly::root_part(part),expected_player,ctx)}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/catalog.move",
+    "line": 20,
+    "text": "use soulidity_model::policy::{Self,Definition,Source,Adapter};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/catalog.move",
+    "line": 24,
+    "text": "use soulidity_model::material_policy::{Self,Terms};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/catalog.move",
+    "line": 27,
+    "text": "use soulidity_model::assembly::{Self,Profile,Scope};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/catalog.move",
+    "line": 333,
+    "text": "public(package) fun issue<C>(p:&mut Product<C>,v:u64,definition_hash:vector<u8>,target:&soulidity_standard::soul::Soul):soulidity_model::components::Permit {"
+  },
+  {
+    "path": "move/soulidity_v1/sources/catalog.move",
+    "line": 344,
+    "text": "    soulidity_model::components::authorize(ComponentProducer{},p,target,source)"
+  },
+  {
+    "path": "move/soulidity_v1/sources/collection.move",
+    "line": 23,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/sources/physical.move",
+    "line": 13,
+    "text": "use soulidity_model::policy::{Self,Source};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/physical.move",
+    "line": 14,
+    "text": "use soulidity_model::material_policy::{Self,Terms};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/physical.move",
+    "line": 21,
+    "text": "use soulidity_model::assembly::{Self,PartKey};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/runtime.move",
+    "line": 13,
+    "text": "use soulidity_model::policy::{Self,Layout};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/runtime.move",
+    "line": 17,
+    "text": "use soulidity_model::assembly::{Self,PartKey};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/runtime.move",
+    "line": 64,
+    "text": "public fun enhance_maker<C>(s:&mut Soul,maker:&mut Product<C>,cfg:&mut Config<C>,expected:u64,policy_hash:vector<u8>,choices:vector<Purchase>,attempt:vector<u8>,fee_revision:u64,expiry:u64,payment:Coin<C>,clock:&Clock,system:&System,ctx:&mut TxContext):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/sources/runtime.move",
+    "line": 68,
+    "text": "public fun enhance_pack<C>(s:&mut Soul,pack:&mut Product<C>,maker:&Product<C>,cfg:&mut Config<C>,version:u64,expected:u64,policy_hash:vector<u8>,choices:vector<Purchase>,attempt:vector<u8>,fee_revision:u64,expiry:u64,payment:Coin<C>,clock:&Clock,system:&System,ctx:&mut TxContext):vector<soulidity_model::components::Item>{"
+  },
+  {
+    "path": "move/soulidity_v1/sources/runtime.move",
+    "line": 80,
+    "text": "public fun select_scoped<C>(b:&mut Build,product:&mut Product<C>,definition_hash:vector<u8>,part:soulidity_model::assembly::PartKey,layout:Layout,cfg:&Config<C>,system:&System,ctx:&mut TxContext) {"
+  },
+  {
+    "path": "move/soulidity_v1/sources/runtime.move",
+    "line": 84,
+    "text": "public fun select_player_scoped<C>(b:&mut Build,product:&mut Product<C>,p:&Player,part:soulidity_model::assembly::PartKey,expected_player:u64,cfg:&Config<C>,system:&System,ctx:&mut TxContext) {"
+  },
+  {
+    "path": "move/soulidity_v1/sources/player.move",
+    "line": 5,
+    "text": "use soulidity_model::policy::{Self,Source,Layout};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/player.move",
+    "line": 10,
+    "text": "use soulidity_model::assembly::{Self,State,Scope,PartKey,ProfileSnapshot};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/native_binding.move",
+    "line": 27,
+    "text": "    type_name::with_original_ids<soulidity_model::components::Item>(),"
+  },
+  {
+    "path": "move/soulidity_v1/sources/native_binding.move",
+    "line": 44,
+    "text": "    type_name::with_defining_ids<soulidity_model::components::Item>(),"
+  },
+  {
+    "path": "move/soulidity_v1/sources/market.move",
+    "line": 20,
+    "text": "use soulidity_model::components::{Self as item,Item};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/market.move",
+    "line": 21,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_v1/sources/market.move",
+    "line": 83,
+    "text": "public fun bundle_bound_source<C>(l:&Listing<Soul,C>,index:u64):soulidity_model::policy::Source{assert!(l.state==0,EState);*soul::bound_source(dof::borrow(&l.id,AssetKey{}),index)}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/market.move",
+    "line": 84,
+    "text": "public fun bundle_reference_source<C>(l:&Listing<Soul,C>,index:u64):soulidity_model::policy::Source{assert!(l.state==0,EState);*soul::reference_source(dof::borrow(&l.id,AssetKey{}),index)}"
+  },
+  {
+    "path": "move/soulidity_v1/sources/metadata.move",
+    "line": 12,
+    "text": "use soulidity_model::policy::{Definition,Adapter};"
+  },
+  {
+    "path": "move/soulidity_v1/sources/metadata.move",
+    "line": 14,
+    "text": "use soulidity_model::material_policy::Terms;"
+  },
+  {
+    "path": "move/soulidity_model/Move.toml",
+    "line": 2,
+    "text": "name = \"SoulidityModel\""
+  },
+  {
+    "path": "move/soulidity_model/Move.toml",
+    "line": 12,
+    "text": "soulidity_model = \"0x0\""
+  },
+  {
+    "path": "move/soulidity_model/sources/components.move",
+    "line": 3,
+    "text": "module soulidity_model::components;"
+  },
+  {
+    "path": "move/soulidity_model/sources/components.move",
+    "line": 7,
+    "text": "use soulidity_model::policy::{Self,Source};"
+  },
+  {
+    "path": "move/soulidity_model/sources/policy.move",
+    "line": 2,
+    "text": "module soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_model/sources/assembly.move",
+    "line": 3,
+    "text": "module soulidity_model::assembly;"
+  },
+  {
+    "path": "move/soulidity_model/sources/assembly.move",
+    "line": 9,
+    "text": "use soulidity_model::policy::{Self,Source,Layout,Adapter};"
+  },
+  {
+    "path": "move/soulidity_model/sources/material_policy.move",
+    "line": 2,
+    "text": "module soulidity_model::material_policy;"
+  },
+  {
+    "path": "move/soulidity_model/sources/material_policy.move",
+    "line": 3,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/standard_examples/model_producer/Move.toml",
+    "line": 6,
+    "text": "SoulidityModel = { local = \"../../soulidity_model\" }"
+  },
+  {
+    "path": "move/standard_examples/model_producer/sources/producer.move",
+    "line": 6,
+    "text": "use soulidity_model::policy::{Self,Definition,Source};"
+  },
+  {
+    "path": "move/standard_examples/model_producer/sources/producer.move",
+    "line": 7,
+    "text": "use soulidity_model::assembly::{Self,Profile};"
+  },
+  {
+    "path": "move/standard_examples/model_producer/sources/producer.move",
+    "line": 8,
+    "text": "use soulidity_model::components::{Self,Permit};"
+  },
+  {
+    "path": "move/standard_examples/output_extension/sources/extension.move",
+    "line": 10,
+    "text": "use soulidity_model::assembly::{ProfileSnapshot,Profile};"
+  },
+  {
+    "path": "move/standard_examples/visual_capture_extension/sources/extension.move",
+    "line": 8,
+    "text": "use soulidity_model::assembly::{Self,Profile};"
+  },
+  {
+    "path": "move/standard_examples/visual_capture_extension/sources/extension.move",
+    "line": 9,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_application/Move.toml",
+    "line": 7,
+    "text": "SoulidityModel = { local = \"../soulidity_model\" }"
+  },
+  {
+    "path": "move/soulidity_application/sources/resale.move",
+    "line": 6,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_application/sources/issuance.move",
+    "line": 7,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_application/sources/forms.move",
+    "line": 12,
+    "text": "use soulidity_model::components::Item;"
+  },
+  {
+    "path": "move/soulidity_application/sources/forms.move",
+    "line": 13,
+    "text": "use soulidity_model::assembly::{Self,ProfileSnapshot,Scope,Variant};"
+  },
+  {
+    "path": "move/soulidity_application/sources/forms.move",
+    "line": 14,
+    "text": "use soulidity_model::policy;"
+  },
+  {
+    "path": "move/soulidity_application/sources/physical_metadata.move",
+    "line": 6,
+    "text": "use soulidity_model::policy::{Self,Source};"
+  },
+  {
+    "path": "move/soulidity_application/sources/physical_metadata.move",
+    "line": 7,
+    "text": "use soulidity_model::material_policy::Terms;"
+  },
+  {
+    "path": "move/soulidity_application/sources/visual_capture.move",
+    "line": 9,
+    "text": "use soulidity_model::assembly::{Self,Profile,ProfileSnapshot,Scope,Equipped};"
+  },
+  {
+    "path": "move/soulidity_application/sources/visual_capture.move",
+    "line": 10,
+    "text": "use soulidity_model::policy::{Self};"
+  },
+  {
+    "path": "move/soulidity_application/sources/output.move",
+    "line": 11,
+    "text": "use soulidity_model::policy::{Self,Source,Layout,Adapter};"
+  },
+  {
+    "path": "move/soulidity_application/sources/output.move",
+    "line": 17,
+    "text": "use soulidity_model::assembly::{Self,PartKey,ProfileSnapshot,Profile,Scope};"
+  },
+  {
+    "path": "move/soulidity_application/sources/publication_rules.move",
+    "line": 6,
+    "text": "use soulidity_model::policy::{Self,Definition,Adapter};"
+  },
+  {
+    "path": "move/soulidity_application/sources/publication_rules.move",
+    "line": 108,
+    "text": "public fun validate_physical(definitions:&vector<Definition>,terms:&vector<soulidity_model::material_policy::Terms>):u64{"
+  },
+  {
+    "path": "move/soulidity_application/sources/publication_rules.move",
+    "line": 110,
+    "text": "    while(i < terms.length()){let hash=soulidity_model::material_policy::definition(&terms[i]);if(seen.contains(&hash) || !definitions.any!(|d|policy::definition_hash(d)==hash))return EDefinition;seen.push_back(hash);i=i+1};0"
+  },
+  {
+    "path": "move/soulidity_application/sources/character.move",
+    "line": 13,
+    "text": "use soulidity_model::policy::{Self,Source,Layout,Adapter};"
+  },
+  {
+    "path": "move/soulidity_application/sources/character.move",
+    "line": 14,
+    "text": "use soulidity_model::components::{Self as item,Item,Permit};"
+  },
+  {
+    "path": "move/soulidity_application/sources/character.move",
+    "line": 29,
+    "text": "use soulidity_model::assembly::{Self,State,Profile,Scope,PartKey,ProfileSnapshot,Equipped,Variant};"
+  },
+  {
+    "path": "scripts/inspect_contract_dependencies.py",
+    "line": 10,
+    "text": "PACKAGES = ['soulidity_application', 'soulidity_standard', 'soulidity_model', 'soulidity_content', 'soulidity_v1', 'soulidity_foundation', 'soulidity_visual', 'soulidity_community']"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 30,
+    "text": "    'positive_visual_variant_native_control': ('public fun issue<C>(p:&soulidity_v1::catalog::Product<C>,c:&soulidity_v1::catalog::Control,scene:soulidity_visual::visual::Scene,a:vector<soulidity_model::policy::Adapter>):soulidity_model::assembly::Variant{soulidity_v1::catalog::visual_variant(p,c,1,scene,a)}', True, None),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 31,
+    "text": "    'positive_visual_variant_metadata_store': ('public struct View has store{v:soulidity_model::assembly::Variant} public fun read(v:&View):vector<u8>{soulidity_model::assembly::variant_hash(&v.v)}', True, None),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 32,
+    "text": "    'positive_visual_variant_holder_atomic_update': ('public fun update(s:&mut soulidity_standard::soul::Soul,v:vector<soulidity_model::assembly::Variant>,ctx:&mut TxContext):vector<soulidity_model::components::Item>{let slots=soulidity_application::character::capture_slots(s);let colors=soulidity_application::character::colors(s);let profiles=soulidity_application::character::profile_snapshots(s);let rev=soulidity_application::character::revision(s);let recipe=soulidity_application::character::recipe_hash(s);soulidity_application::character::apply_variant_loadout(s,v,slots,vector[],colors,profiles,rev,recipe,ctx)}', True, None),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 33,
+    "text": "    'foreign_visual_variant_constructor': ('public fun attack(p:soulidity_model::assembly::Profile,t:soulidity_visual::visual::Scene):soulidity_model::assembly::Variant{soulidity_model::assembly::Variant{domain:vector[],schema:1,original:p,target:t,adapters:vector[],target_hash:vector[],commitment:vector[]}}', False, 'EC04001'),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 34,
+    "text": "    'foreign_visual_variant_scene_mutation': ('public fun attack(v:&mut soulidity_model::assembly::Variant,t:soulidity_visual::visual::Scene){v.target=t}', False, 'EC04001'),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 35,
+    "text": "    'foreign_visual_variant_hash_mutation': ('public fun attack(v:&mut soulidity_model::assembly::Variant){v.commitment=vector[]}', False, 'EC04001'),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 36,
+    "text": "    'foreign_visual_variant_publication_mutation': ('public fun attack(v:&mut soulidity_model::assembly::Variant,p:soulidity_model::assembly::Profile){v.original=p}', False, 'EC04001'),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 37,
+    "text": "    'foreign_visual_variant_asset_transfer': ('public fun attack(v:soulidity_model::assembly::Variant){transfer::public_transfer(v,@0xb)}', False, 'EC05001'),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 58,
+    "text": "    'positive_capture_owned_creation': ('public struct CaptureProducer has drop {} public struct Parent has key{id:UID} public fun own(p:&Parent,profile:soulidity_model::assembly::Profile,ctx:&mut TxContext):soulidity_application::visual_capture::Capture{soulidity_application::visual_capture::new(CaptureProducer{},p,object::id(p),0,profile,vector[],vector[],vector[],vector[],ctx)}',True,None),"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 107,
+    "text": "        \"public fun consume(p:soulidity_model::components::Permit,s:&soulidity_standard::soul::Soul,ctx:&mut TxContext):(soulidity_model::policy::Source,Option<soulidity_model::components::Item>){soulidity_model::components::materialize(p,object::id(s),ctx)}\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 110,
+    "text": "        \"public fun view(p:&soulidity_model::components::Permit):soulidity_model::policy::Source{*soulidity_model::components::preview(p)}\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 116,
+    "text": "        \"public fun attack(source:soulidity_model::policy::Source,target:ID):soulidity_model::components::Permit{soulidity_model::components::Permit{source,target}}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 119,
+    "text": "        \"public fun attack(p:soulidity_model::components::Permit):(soulidity_model::components::Permit,soulidity_model::components::Permit){(copy p,p)}\", False, \"EC05001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 122,
+    "text": "        \"public fun attack(p:soulidity_model::components::Permit){let _=p;}\", False, \"EC05001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 125,
+    "text": "        \"public struct Stash has store{permit:soulidity_model::components::Permit}\", False, \"EC05001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 128,
+    "text": "        \"public fun attack(p:soulidity_model::components::Permit,r:address){transfer::public_transfer(p,r)}\", False, \"EC05001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 131,
+    "text": "        \"public fun attack(source:soulidity_model::policy::Source,ctx:&mut TxContext):soulidity_model::components::Item{soulidity_model::components::Item{id:object::new(ctx),source}}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 134,
+    "text": "        \"public fun attack(p:&mut soulidity_model::components::Permit,target:ID){p.target=target}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 137,
+    "text": "        \"public fun view(s:&soulidity_model::policy::Source):std::type_name::TypeName{soulidity_model::policy::source_type(s)}\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 140,
+    "text": "        \"public fun view(d:&soulidity_model::policy::Definition,s:&soulidity_visual::visual::Scene,f:vector<soulidity_visual::visual::Fragment>):soulidity_model::policy::Definition{soulidity_model::policy::extended_definition(d,s,f)}\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 146,
+    "text": "        \"public fun attack(s:&mut soulidity_model::policy::Source){s.source_type=std::type_name::with_defining_ids<u64>()}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 149,
+    "text": "        \"public fun attack(s:soulidity_model::policy::Source,ctx:&mut TxContext):soulidity_model::components::Item{soulidity_model::components::issue_item(s,ctx)}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 188,
+    "text": "        \"public fun attack(root:&soulidity_standard::soul::Soul,profile:soulidity_model::assembly::Profile,scene:soulidity_visual::visual::Scene,snapshot:soulidity_application::resale::Snapshot,ctx:&mut TxContext):soulidity_application::character::ApplicationState{soulidity_application::character::state_new(root,std::type_name::with_original_ids<u64>(),object::id(root),object::id(root),1,vector[],vector[],profile,vector[],vector[],scene,snapshot,@0xb,ctx)}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 255,
+    "text": "        \"public fun attack(v:&mut soulidity_v1::catalog::Version,d:vector<soulidity_model::policy::Definition>) { soulidity_v1::catalog::append_definitions(v,d) }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 261,
+    "text": "        \"public fun attack(d:&mut soulidity_model::policy::Definition,s:&soulidity_visual::visual::Scene,f:vector<soulidity_visual::visual::Fragment>) { d.representation=soulidity_visual::visual::extend_representation(soulidity_model::policy::representation(d),s,f) }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 363,
+    "text": "        \"public fun describe(h:vector<u8>,p:soulidity_model::assembly::PartKey,l:soulidity_model::policy::Layout):soulidity_v1::issuer::Purchase { soulidity_v1::issuer::purchase(h,p,l) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 381,
+    "text": "        \"public fun attack<C>(s:&soulidity_standard::soul::Soul,p:&mut soulidity_v1::catalog::Product<C>,m:&soulidity_v1::catalog::Product<C>,c:&mut soulidity_foundation::economics::Config<C>,coin:sui::coin::Coin<C>,clock:&sui::clock::Clock,ctx:&mut TxContext):vector<soulidity_model::components::Item> { soulidity_v1::issuer::enhance_pack(s,p,m,c,1,0,vector[],vector[],vector[],0,1000,coin,clock,ctx) }\", False, \"EC04006\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 384,
+    "text": "        \"public fun inspect(a:&soulidity_application::output::Artifact):soulidity_model::assembly::PartKey { soulidity_application::output::slot_part(soulidity_application::output::original_slot(a,0)) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 408,
+    "text": "        \"public fun mount<C>(s:&mut soulidity_standard::soul::Soul,p:&soulidity_v1::catalog::Product<C>):soulidity_model::assembly::Scope { soulidity_application::character::admit_pack(s,soulidity_v1::catalog::assembly_profile(p,1),0) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 420,
+    "text": "        \"public fun inspect(v:&soulidity_v1::catalog::Version):vector<soulidity_model::policy::Definition> { soulidity_v1::catalog::definitions(v) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 423,
+    "text": "        \"public fun attack(r:&soulidity_v1::physical::Registry<sui::sui::SUI>,p:soulidity_model::assembly::Profile,ctx:&mut TxContext):soulidity_application::visual_capture::Capture { soulidity_application::visual_capture::new(soulidity_v1::physical::CaptureProducer{},r,object::id_from_address(@0x1),0,p,vector[],vector[],vector[],vector[],ctx) }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 444,
+    "text": "        \"public fun inspect(s:&soulidity_standard::soul::Soul):vector<soulidity_model::assembly::ProfileSnapshot> { soulidity_application::character::manifest_profiles(&soulidity_application::character::manifest(s)) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 447,
+    "text": "        \"public fun inspect(a:&soulidity_application::output::Artifact):vector<soulidity_model::assembly::ProfileSnapshot> { soulidity_application::output::original_profiles(a) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 450,
+    "text": "        \"public fun attack(s:&soulidity_standard::soul::Soul,scope:soulidity_model::assembly::Scope) { soulidity_application::character::tune_pack_colors(s,scope,vector[],0) }\", False, \"EC04006\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 453,
+    "text": "        \"public fun attack(s:&mut soulidity_standard::soul::Soul,scope:soulidity_model::assembly::Scope,ctx:&TxContext):soulidity_application::character::Draft{let d=soulidity_application::character::Draft{root:object::id(s),state:soulidity_application::character::application_module_id(s),actor:ctx.sender()};soulidity_application::character::set_initial_pack_colors(&d,s,scope,vector[],ctx);d}\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 459,
+    "text": "        \"public fun attack(s:&mut soulidity_application::character::ApplicationState,p:soulidity_model::assembly::Profile) { soulidity_application::character::state_admit_profile(s,p) }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 462,
+    "text": "        \"public fun inspect<C>(p:&soulidity_v1::catalog::Product<C>):soulidity_model::assembly::Scope { soulidity_model::assembly::profile_scope(&soulidity_v1::catalog::assembly_profile(p,1)) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 465,
+    "text": "        \"public fun inspect(p:&soulidity_v1::player::Player):vector<soulidity_model::assembly::ProfileSnapshot> { soulidity_v1::player::profiles(p) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 468,
+    "text": "        \"public fun attack(s:&mut soulidity_model::assembly::State) { s.parts=vector[] }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 471,
+    "text": "        \"public fun attack(scope:soulidity_model::assembly::Scope,scene:soulidity_visual::visual::Scene):soulidity_model::assembly::Profile { soulidity_model::assembly::Profile{scope,parent:option::none(),scene,parts:vector[b\\\"part\\\"],adapters:vector[]} }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 474,
+    "text": "        \"public fun attack(id:ID):soulidity_model::assembly::Scope { soulidity_model::assembly::Scope{protocol:id,product:id,source_type:std::type_name::with_defining_ids<soulidity_v1::catalog::Product<u64>>(),version:1,policy:vector[1]} }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 477,
+    "text": "        \"public fun attack(s:&mut soulidity_model::assembly::State,b:&soulidity_visual::visual::Scene,p:soulidity_model::assembly::Profile) { soulidity_model::assembly::admit(s,b,p) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 480,
+    "text": "        \"public fun attack(p:&soulidity_v1::player::Player,scope:soulidity_model::assembly::Scope,ctx:&TxContext) { soulidity_v1::player::set_pack_colors(p,scope,vector[],0,ctx) }\", False, \"EC04006\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 483,
+    "text": "        \"public fun attack(mut p:soulidity_model::assembly::PartKey):soulidity_model::assembly::PartKey { p.scope=option::none();p }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 654,
+    "text": "        \"public fun attack(mut s:soulidity_model::policy::Source,p:soulidity_foundation::economics::MarketPolicy):soulidity_model::policy::Source { s.market=p;s }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 666,
+    "text": "        \"public struct View has drop {asset:ID,registry:ID,source:soulidity_model::policy::Source,terms:soulidity_model::material_policy::Terms,sale:soulidity_application::physical_metadata::SalePolicy,registration:soulidity_application::physical_metadata::Registration,row_hash:vector<u8>,serial:u64,holder:address,epoch:u64,authorization:vector<u8>,proof:Option<soulidity_application::physical_metadata::Proof>,visual:vector<u8>,provenance:vector<u8>} public fun inspect(v:&soulidity_application::physical_metadata::Snapshot):vector<u8> { use soulidity_application::physical_metadata as m; std::bcs::to_bytes(&View{asset:m::snapshot_asset(v),registry:m::snapshot_registry(v),source:m::snapshot_source(v),terms:m::snapshot_terms(v),sale:m::snapshot_sale(v),registration:m::snapshot_registration(v),row_hash:m::snapshot_row_hash(v),serial:m::snapshot_serial(v),holder:m::snapshot_holder(v),epoch:m::snapshot_epoch(v),authorization:m::snapshot_authorization(v),proof:m::snapshot_proof(v),visual:m::snapshot_visual(v),provenance:m::snapshot_provenance(v)}) }\", True, None"
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 702,
+    "text": "        \"public fun attack(mut s:soulidity_model::policy::Source,p:soulidity_foundation::economics::PrimaryPolicy):soulidity_model::policy::Source { s.primary=p;s }\", False, \"EC04001\""
+  },
+  {
+    "path": "scripts/verify_contract_ability_probes.py",
+    "line": 720,
+    "text": "CASES.update({'foreign_binding_copy': ('public fun attack(p:soulidity_application::issuance::Binding):(soulidity_application::issuance::Binding,soulidity_application::issuance::Binding){(copy p,p)}', False, 'EC05001'), 'foreign_binding_discard': ('public fun attack(p:soulidity_application::issuance::Binding){let _=p;}', False, 'EC05001'), 'foreign_binding_store': ('public struct Stash has store{proof:soulidity_application::issuance::Binding}', False, 'EC05001'), 'foreign_genesis_copy': ('public fun attack(p:soulidity_application::issuance::Genesis):(soulidity_application::issuance::Genesis,soulidity_application::issuance::Genesis){(copy p,p)}', False, 'EC05001'), 'foreign_genesis_discard': ('public fun attack(p:soulidity_application::issuance::Genesis){let _=p;}', False, 'EC05001'), 'foreign_genesis_store': ('public struct Stash has store{proof:soulidity_application::issuance::Genesis}', False, 'EC05001'), 'foreign_contribution_copy': ('public fun attack(p:soulidity_application::issuance::Contribution):(soulidity_application::issuance::Contribution,soulidity_application::issuance::Contribution){(copy p,p)}', False, 'EC05001'), 'foreign_contribution_discard': ('public fun attack(p:soulidity_application::issuance::Contribution){let _=p;}', False, 'EC05001'), 'foreign_contribution_store': ('public struct Stash has store{proof:soulidity_application::issuance::Contribution}', False, 'EC05001'), 'foreign_draft_copy': ('public fun attack(p:soulidity_application::character::Draft):(soulidity_application::character::Draft,soulidity_application::character::Draft){(copy p,p)}', False, 'EC05001'), 'foreign_draft_discard': ('public fun attack(p:soulidity_application::character::Draft){let _=p;}', False, 'EC05001'), 'foreign_draft_store': ('public struct Stash has store{proof:soulidity_application::character::Draft}', False, 'EC05001'), 'foreign_enhancement_copy': ('public fun attack(p:soulidity_application::character::Enhancement):(soulidity_application::character::Enhancement,soulidity_application::character::Enhancement){(copy p,p)}', False, 'EC05001'), 'foreign_enhancement_discard': ('public fun attack(p:soulidity_application::character::Enhancement){let _=p;}', False, 'EC05001'), 'foreign_enhancement_store': ('public struct Stash has store{proof:soulidity_application::character::Enhancement}', False, 'EC05001'), 'foreign_binding_constructor': ('public fun attack(config:ID):soulidity_application::issuance::Binding{soulidity_application::issuance::Binding{config,operator:std::type_name::with_original_ids<u64>()}}', False, 'EC04001'), 'foreign_genesis_constructor': ('public fun attack(id:ID,h:vector<u8>):soulidity_application::issuance::Genesis{soulidity_application::issuance::Genesis{config:id,root:id,source:id,version:1,policy:h,actor:@0xb,metadata:h,operator:std::type_name::with_original_ids<u64>()}}', False, 'EC04001'), 'foreign_contribution_constructor': ('public fun attack(id:ID,payment:soulidity_foundation::economics::PrimaryReceipt):soulidity_application::issuance::Contribution{soulidity_application::issuance::Contribution{root:id,product:id,version:1,policy:vector[],actor:@0xb,payment}}', False, 'EC04001'), 'foreign_application_operator_constructor': ('public fun attack():soulidity_v1::application_operator::ApplicationOperator{soulidity_v1::application_operator::ApplicationOperator{}}', False, 'EC04001'), 'foreign_application_operator_export': ('public fun attack():soulidity_v1::application_operator::ApplicationOperator{soulidity_v1::application_operator::operator()}', False, 'EC04001'), 'positive_draft_palette_consumer': ('public fun apply(d:&soulidity_application::character::Draft,s:&mut soulidity_standard::soul::Soul,colors:vector<soulidity_visual::visual::ColorChoice>,ctx:&TxContext){soulidity_application::character::set_initial_colors(d,s,colors,ctx)}', True, None), 'positive_enhancement_permit_consumer': ('public fun apply(e:&soulidity_application::character::Enhancement,s:&mut soulidity_standard::soul::Soul,p:soulidity_model::components::Permit,part:soulidity_model::assembly::PartKey,l:soulidity_model::policy::Layout,ctx:&mut TxContext):Option<soulidity_model::components::Item>{soulidity_application::character::replace_issued(e,s,p,part,l,ctx)}', True, None)})"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 46,
+    "text": " 'J01': [], 'J02': [], 'J03': [('soulidity_model/policy','definition')],"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 49,
+    "text": " 'J06': [('soulidity_v1/catalog','create_maker'),('soulidity_model/policy','supply')],"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 55,
+    "text": " 'J12': [('soulidity_model/components','issue_item'),('soulidity_v1/catalog','append_adapters')],"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 91,
+    "text": " 'C15':[('soulidity_model/material_policy','terms')]+J['J24']+J['J30']"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 100,
+    "text": " 'MAKER':['move/soulidity_v1/sources/catalog.move','move/soulidity_v1/sources/release.move','move/soulidity_v1/sources/metadata.move','move/soulidity_v1/sources/issuer.move','move/soulidity_v1/sources/player.move','move/soulidity_v1/sources/physical.move','move/soulidity_v1/sources/runtime.move','move/soulidity_model/sources/*.move','move/soulidity_application/sources/publication_rules.move'],"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 103,
+    "text": " 'EXTENSIONS':['move/soulidity_application/sources/*.move','move/soulidity_visual/sources/*.move','move/soulidity_model/sources/*.move'],"
+  },
+  {
+    "path": "scripts/ecosystem/build_record_mapping.py",
+    "line": 113,
+    "text": " 'POLICY.ASSET_RULES':['move/soulidity_foundation/sources/economics.move','move/soulidity_foundation/sources/revenue.move','move/soulidity_application/sources/resale.move','move/soulidity_model/sources/policy.move','move/soulidity_model/sources/material_policy.move'],"
+  },
+  {
+    "path": "scripts/ecosystem/source_inventory.py",
+    "line": 9,
+    "text": "PACKAGES = ['soulidity_standard','soulidity_foundation','soulidity_model','soulidity_visual','soulidity_content','soulidity_application','soulidity_community','soulidity_native','soulidity_v1']"
+  },
+  {
+    "path": "scripts/ecosystem/map_repository_ownership.py",
+    "line": 15,
+    "text": "    'EXTENSIONS': {'soulidity_model': ['assembly', 'components', 'material_policy', 'policy'],"
+  },
+  {
+    "path": "scripts/ecosystem/map_repository_ownership.py",
+    "line": 80,
+    "text": "            'removed_double_writer_assignments': ['soulidity_model::policy', 'soulidity_model::material_policy']},"
+  },
+  {
+    "path": "scripts/ecosystem/authority_inventory.py",
+    "line": 94,
+    "text": "'EXTENSIONS':['move/soulidity_application/sources/character.move','move/soulidity_application/sources/forms.move','move/soulidity_application/sources/growth.move','move/soulidity_application/sources/output.move','move/soulidity_application/sources/vault.move','move/soulidity_application/sources/visual_capture.move','move/soulidity_model/sources/*.move','move/soulidity_visual/sources/*.move'],"
+  },
+  {
+    "path": "scripts/ecosystem/authority_inventory.py",
+    "line": 97,
+    "text": "'POLICY.ASSET_RULES':['move/soulidity_foundation/sources/economics.move','move/soulidity_foundation/sources/revenue.move','move/soulidity_foundation/sources/source_authority.move','move/soulidity_model/sources/policy.move','move/soulidity_model/sources/material_policy.move'],"
+  },
+  {
+    "path": "scripts/ecosystem/split_repositories.py",
+    "line": 19,
+    "text": "    'soulidity_model': 'soul-extensions',"
+  },
+  {
+    "path": "scripts/ecosystem/split_repositories.py",
+    "line": 22,
+    "text": "    'soulidity_standard', 'soulidity_foundation', 'soulidity_model',"
+  },
+  {
+    "path": "scripts/ecosystem/split_repositories.py",
+    "line": 69,
+    "text": "        if name == 'soulidity_model':"
+  },
+  {
+    "path": "docs/SOUL_STANDARD_KERNEL_CN.md",
+    "line": 137,
+    "text": "唯一资产根仍为独立 Standard Soul；Model 新增 `components`，不依赖 Core/Walrus，依赖 Standard 以核验实际目标 Soul。原 `soulidity_v1::item` 已删除，不保留 alias。真实自由组件格式为 `soulidity_model::components::Item has key,store`，私有 UID/Source，原 ID 装卸/市场/集合/Loadout/NativeBinding 调用方全部改用此唯一类型。原网站操作路径保持；ABI/type/event 路径改变需要后续新部署与 SDK 接入，本轮不做前端。"
+  },
+  {
+    "path": "docs/SOUL_STANDARD_KERNEL_CN.md",
+    "line": 161,
+    "text": "`policy` 和 `assembly` 从 Core 移入独立 `soulidity_model`，没有旧模块 alias。该包只依赖 Foundation/Visual/Sui，承载应用视觉/许可/经济元数据，不是第二个 Soul 标准。公开 Source/Scope/Profile 构造均消耗定义模块的 **PolicyProducer** 标记，W 与实际 `&P` 同 original package/module；product ID 和 defining type 从实际对象取得。Source 检查正版本、版税≤10000、非零收款人，以及 Market/Primary 快照属于声明的协议。Maker 关系/发布真实性由对应生产者验证；这些值可复制、可预览，**绝不是供给、支付、访问或 Item 发行凭证**。"
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 40,
+    "text": "        \"move/soulidity_model/sources/policy.move\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 89,
+    "text": "        \"move/soulidity_model/sources/policy.move\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 232,
+    "text": "        \"move/soulidity_model/sources/policy.move\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 285,
+    "text": "        \"move/soulidity_model/sources/material_policy.move\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 348,
+    "text": "        \"move/soulidity_model/sources/policy.move\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 434,
+    "text": "        \"move/soulidity_model/sources/policy.move\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 914,
+    "text": "    \"path\": \"move/soulidity_model\","
+  },
+  {
+    "path": "docs/CONTRACT_REBUILD_COVERAGE.json",
+    "line": 924,
+    "text": "    \"item_type\": \"soulidity_model::components::Item\","
+  }
+]

@@ -1,0 +1,12 @@
+[package]
+name = "SoulidityModel"
+edition = "2024"
+
+[dependencies]
+SoulidityStandard = { local = "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_standard" }
+SoulidityFoundation = { local = "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_foundation" }
+SoulidityVisual = { local = "../../../../../../../.codex/worktrees/soul-dof-v1-rebuild/soulidity/move/soulidity_visual" }
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "2a0becb2fcc6989e492981104af67f62f2c9511a", override = true }
+
+[addresses]
+soulidity_model = "0x0"

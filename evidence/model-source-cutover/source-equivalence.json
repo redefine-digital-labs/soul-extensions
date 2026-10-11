@@ -1,0 +1,14 @@
+{
+  "production_source_file_count": 52,
+  "test_source_file_count": 66,
+  "actual_sources_unchanged": true,
+  "candidate_sources_equal_actual": true,
+  "model_four_sources": {
+    "sources/components.move": "2c7cd53d70fb85b87c3d15ad79a5c31a18e39d05d1ee373a4485108d7d68fd05",
+    "sources/policy.move": "78654d1cd083c0a85f9d9de5b36b0bbd8bab595e1d85fcc4ca534ebff51a7614",
+    "sources/assembly.move": "348b6ce070acb56d73f5940e9c1eb0897f95213b1416213b34f7135dbdd3fe98",
+    "sources/material_policy.move": "d3c40174c015a92567fb51965ee6691bb6586dbf1c23823994e9785607322448"
+  },
+  "module_function_ability_guard_changes": 0,
+  "shared_repository_files_written": 0
+}

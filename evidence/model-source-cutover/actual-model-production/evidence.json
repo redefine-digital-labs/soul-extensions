@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/Users/naoer/.codex/worktrees/soul-dof-v1-rebuild/soulidity/output/contract-rebuild/local-ptb-2026-10-08/tooling/sui",
+    "move",
+    "build",
+    "--path",
+    "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/move/soulidity_model",
+    "--install-dir",
+    "/Users/naoer/Documents/Claude/Projects/soulidity-ecosystem/soul-extensions/evidence/model-source-cutover/actual-model-production/install",
+    "--dump-bytecode-as-base64",
+    "--no-tree-shaking",
+    "--with-unpublished-dependencies"
+  ],
+  "exit_code": 0,
+  "tool_sha256": "1d7baa7c7314113671415acfa20279b1eedb6ae6d04f286988a00da285e769c3",
+  "input_hashes_before": {
+    "Move.toml": "a1779d1edb99feb35d35a8281302561d529aa4245f50e2e7829e2fa57574274a",
+    "Move.lock": "26a7f45dabe8f64d038f8a5b6e79167bfa7255e2b47807eaa2295ffece1300b7"
+  },
+  "input_hashes_after": {
+    "Move.toml": "a1779d1edb99feb35d35a8281302561d529aa4245f50e2e7829e2fa57574274a",
+    "Move.lock": "26a7f45dabe8f64d038f8a5b6e79167bfa7255e2b47807eaa2295ffece1300b7"
+  },
+  "dump_sha256": "0653c98f19d37255277c1114a3795b234f4bccb3313ec6022863c9c27263abc4",
+  "production_artifact_count": 99,
+  "production_inputs_only": true,
+  "test_invoked": false,
+  "transactions": 0,
+  "reason": "Preserve full production raw artifacts separately from test build outputs; original test0 is not behavioral coverage."
+}
